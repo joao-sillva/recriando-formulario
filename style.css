@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #bfd7e4;
+}
+
+body,
+input,
+textarea,
+select {
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+legend,
+button {
+    font-family: "Staatliches", sans-serif;
+}
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 465px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #293241;
+}
+
+#page {
+    width: 750px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    width: 391px;
+    margin: 107px 0 32px;
+}
+
+header h1 {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+header p {
+    color: #FFF;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+header img {
+    margin-bottom: -32px;
+}
+
+.fieldset-legend {
+    width: 750px;
+    height: 131px;
+
+    text-align: center;
+    padding: 50px 64px;
+    border-radius: 20px 20px 0 0;
+
+    color: #FFF;
+    font-size: 24px;
+    line-height: 34px;
+    background: #f67669;
+}
+
+form {
+    width: 750px;
+    padding: 50px 64px;
+
+    border-radius: 0 0 20px 20px;
+    background: #FFF;
+    margin-bottom: 64px;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    margin-top: 32px;
+    color: #253B51;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+}
+
+fieldset legend {
+    width: 100%;
+    border-bottom: 1px solid #E6E6F0;
+    padding-bottom: 8px;
+    margin-bottom: 32px;
+}
+
+.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.column-2 {
+    display: flex;
+    gap: 22px;
+}
+
+.column-2>div {
+    width: 100%;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label,
+.checkbox-wrapper label {
+    color: #4E4958;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+    color: #a9a7af;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 9px;
+}
+
+.input-wrapper label span:hover {
+    color: #6c6a71;
+}
+
+.input-wrapper input,
+.input-wrapper textarea,
+.input-wrapper select {
+    height: 55px;
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    background: #FAFAFC;
+
+    padding: 12px;
+    color: #6c6a71;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.input-wrapper textarea {
+    height: 166px;
+    resize: none;
+}
+
+.input-wrapper select {
+    width: 50%;
+    appearance: none;
+    -webkit-appearance: none;
+    margin-bottom: 21px;
+}
+
+.checkbox-wrapper {
+    position: relative;
+    display: flex;
+    font-size: 12px;
+}
+
+.checkbox-wrapper label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.checkbox-wrapper input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.checkbox-wrapper label::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked+label::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_9503_23)'%3E%3Cpath d='M9.00003 16.17L4.83003 12L3.41003 13.41L9.00003 19L21 6.99997L19.59 5.58997L9.00003 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_9503_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+.checkbox-wrapper input:focus+label::before {
+    outline: 1px solid #121214;
+}
+
+.column-3 {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 63px;
+}
+
+.column-3>div {
+    width: 50%;
+}
+
+.column-3>div:nth-child(1) {
+    width: 100%;
+}
+
+button {
+    width: 622px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    background: #F67669;
+
+    color: #FFF;
+    font-size: 20px;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ef6b5c;
+}

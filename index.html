@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <title>Avalie sua Mentoria</title>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <h1>Avalie sua mentoria</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+            <img src="images/evaluation.svg" alt="Avaliação com três estrelas">
+        </header>
+        
+        <legend class="fieldset-legend">Informações pessoais</legend>
+
+        <form id="evaluation-mentor">
+            <fieldset>
+                    <div class="fieldset-wrapper">
+    
+                        <div class="column-2">
+                            <div class="input-wrapper">
+                                <label for="info-name">Nome</label>
+                                <input id="info-name" type="text">
+                            </div>
+    
+                            <div class="input-wrapper">
+                                <label for="info-surname">Sobrenome</label>
+                                <input id="info-surname" type="text">
+                            </div>
+                        </div>
+    
+                        <div class="input-wrapper">
+                            <label for="info-email">Email<span>(digite um email válido)</span></label>
+                            <input id="info-email" type="email">
+                        </div>
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Informações do mentor</legend>     
+                  
+                    <div class="input-wrapper">
+                        <label for="info-mentor">Selecione quem foi o seu mentor</label>
+                        <select id="info-mentor">
+                            <option value="maykBrito">Mayk Brito</option>
+                            <option value="diegoFernandes">Diego Fernandes</option>
+                            <option value="rodrigoGoncalves">Rodrigo Gonçalves</option>
+                        </select>
+                     </div>
+
+                    <div class="input-wrapper">
+                        <label for="info-feedback">Feedback sobre o mentor</label>
+                        <textarea id="info-feedback"></textarea>
+                    </div> 
+                    
+                    <div class="checkbox-wrapper">
+                        <input id="info-checkbox" type="checkbox">
+                        <label for="info-checkbox">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                    </div>
+                    
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Agendando próxima mentoria</legend>
+
+                    <div class="column-3">
+                        <div class="input-wrapper">
+                            <label for="info-date">Data<span>(DD/MM/AAAA)</span></label>
+                            <input id="info-date" type="date">
+                        </div>
+        
+                        <div class="input-wrapper">
+                            <label for="info-begin">Das</label>
+                            <input id="info-begin" type="time">
+                        </div>
+    
+                        <div class="input-wrapper">
+                            <label for="info-end">Até</label>
+                            <input id="info-end" type="time">
+                        </div>
+                    </div>   
+                </div>
+            </fieldset>
+
+            <button form="evaluation-mentor">Salvar</button>
+        </form>      
+    </div>
+</body>
+</html>
